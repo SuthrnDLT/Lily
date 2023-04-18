@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/src/Lily/bin/Debug/net7.0/Lily.exe",
+            "program": "${workspaceFolder}/src/Lily/bin/Debug/net7.0/Lily.dll",
             "args": [],
             "cwd": "${workspaceFolder}/src/Lily",
             "console": "internalConsole",
