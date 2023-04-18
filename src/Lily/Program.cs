@@ -1,4 +1,4 @@
-using lily;
+using Lily;
 
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>

@@ -1,4 +1,4 @@
-namespace lily;
+namespace Lily;
 
 public class Worker : BackgroundService
 {
