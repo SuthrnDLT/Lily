@@ -55,7 +55,7 @@
                 "build",
                 "-t",
                 "lily",
-                "${workspaceFolder}"
+                "."
             ]
         },
         {
