@@ -46,6 +46,29 @@
                 "${workspaceFolder}/src/Lily/Lily.csproj"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "docker-build",
+            "command": "docker",
+            "type": "process",
+            "args": [
+                "build",
+                "-t",
+                "lily",
+                "${workspaceFolder}"
+            ]
+        },
+        {
+            "label": "docker-run",
+            "command": "docker",
+            "type": "process",
+            "args": [
+                "run",
+                "--name",
+                "lily",
+                "-d",
+                "lily"
+            ]
         }
     ]
 }
