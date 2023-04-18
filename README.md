@@ -1,6 +1,6 @@
 # Lily
 
-Describe the project here.
+Lily is a simple Discord bot that provides a few useful features for the community.
 
 ![License](https://img.shields.io/github/license/tacosontitan/Lily?logo=github&style=for-the-badge)
 
