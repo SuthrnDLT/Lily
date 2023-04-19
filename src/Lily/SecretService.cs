@@ -5,12 +5,14 @@ namespace Lily;
 
 internal sealed class SecretService
 {
+    private readonly ILogger _logger;
     private readonly IConfigurationRoot _configuration;
     
-    public SecretService()
+    public SecretService(ILogger<SecretService> logger)
     {
+        _logger = logger;
         _configuration = new ConfigurationBuilder()
-            .AddUserSecrets<Program>()
+            .AddUserSecrets("0xlily")
             .Build();
     }
 
@@ -19,7 +21,12 @@ internal sealed class SecretService
         if (string.IsNullOrWhiteSpace(key))
             throw new ArgumentException("Value cannot be null or whitespace.", nameof(key));
 
+        _logger.Log(LogLevel.Information, $"Attempting to retrieve secret {key}.");
         string? result = _configuration[key];
+
+        if (string.IsNullOrWhiteSpace(result))
+            _logger.Log(LogLevel.Warning, $"Secret {key} is null or empty.");
+            
         return result;
     }
 }
