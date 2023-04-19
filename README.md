@@ -60,23 +60,8 @@ dotnet run
 
 ### 🐋 Running the bot in Docker
 
-To run Lily in Docker for the first time, open the repo in VS Code, and execute the following commands in a new terminal:
+To run Lily in Docker, open the repo in VS Code, and execute the following commands in a new terminal:
 
 ```bash
-docker build -t lily .
-docker run --name lily -d lily
-```
-
-You can verify the container is up and running by executing the following command:
-
-```bash
-docker ps
-```
-
-For subsequent runs, you can use the following command:
-
-```bash
-docker rm lily
-docker build -t lily .
-docker run --name lily -d lily
+docker compose up
 ```
