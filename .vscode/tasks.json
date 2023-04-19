@@ -48,26 +48,12 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "docker-build",
+            "label": "docker-compose",
             "command": "docker",
             "type": "process",
             "args": [
-                "build",
-                "-t",
-                "lily",
-                "."
-            ]
-        },
-        {
-            "label": "docker-run",
-            "command": "docker",
-            "type": "process",
-            "args": [
-                "run",
-                "--name",
-                "lily",
-                "-d",
-                "lily"
+                "compose",
+                "up"
             ]
         }
     ]
