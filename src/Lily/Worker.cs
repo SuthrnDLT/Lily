@@ -17,9 +17,10 @@ public class Worker : BackgroundService
         Justification = "High performance logging is not needed right now.")]
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
+        _logger.Log(LogLevel.Information, $"Starting Lily.");
         while (!stoppingToken.IsCancellationRequested)
         {
-            _logger.Log(LogLevel.Information, $"Worker running at: {DateTimeOffset.Now}");
+            _logger.Log(LogLevel.Information, $"Lily is running.");
             await Task.Delay(millisecondsDelay: 1000, stoppingToken)
                       .ConfigureAwait(continueOnCapturedContext: false);
         }
