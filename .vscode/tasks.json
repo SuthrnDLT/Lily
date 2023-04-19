@@ -49,12 +49,12 @@
         },
         {
             "label": "docker-compose",
-            "command": "docker",
-            "type": "process",
-            "args": [
-                "compose",
-                "up"
-            ]
+            "type": "shell",
+            "command": "docker-compose up",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
