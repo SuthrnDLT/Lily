@@ -29,11 +29,11 @@ We believe in keeping the community informed, so here's a few more tidbits of in
 ![Size](https://img.shields.io/github/languages/code-size/tacosontitan/Lily?logo=github&style=for-the-badge)
 ![Line Count](https://img.shields.io/tokei/lines/github/tacosontitan/Lily?logo=github&style=for-the-badge)
 
-### 🔑 Managing your secrets
+## 🔑 Managing your secrets
 
 There are two ways this repository uses secrets.
 
-#### 👤 VS Code User Secrets
+### 👤 VS Code User Secrets
 
 Install the dotnet user-secrets tool by running the following command in the root directory of your project:
 
@@ -47,7 +47,7 @@ Then set your bot's token:
 dotnet user-secrets set discordToken YOUR_TOKEN_HERE
 ```
 
-#### 🐋 Docker environment variables
+### 🐋 Docker environment variables
 
 When running the bot in Docker, you need to pass your secrets as environment variables:
 
@@ -59,7 +59,7 @@ When running the bot in Docker, you need to pass your secrets as environment var
 discordToken=YOUR_TOKEN_HERE
 ```
 
-### ▶️ Running the bot
+## ▶️ Running the bot
 
 To run Lily locally, open the repo in VS Code, and execute the following commands in a new terminal:
 
