@@ -11,18 +11,18 @@ internal sealed class Worker : BackgroundService
 {
     private readonly DiscordSocketClient _client;
     private readonly CommandService _commandService;
-    private readonly SecretService _secretService;
+    private readonly IConfiguration _configuration;
     private readonly ILogger _logger;
 
     public Worker(
+        IConfiguration configuration,
         DiscordSocketClient client,
         CommandService commandService,
-        SecretService secretService,
         ILogger<Worker> logger)
     {
         _client = client;
         _commandService = commandService;
-        _secretService = secretService;
+        _configuration = configuration;
         _logger = logger;
     }
 
@@ -43,7 +43,7 @@ internal sealed class Worker : BackgroundService
         };
 
         _logger.Log(LogLevel.Information, "Attempting to load authentication information.");
-        string token = _secretService.Get("DiscordToken") ?? throw new InvalidOperationException("Discord token is null or empty.");
+        string token = _configuration["discordToken"] ?? throw new InvalidOperationException("Discord token is null or empty.");
 
         _logger.Log(LogLevel.Information, "Attempting to login to Discord.");
         await _client.LoginAsync(TokenType.Bot, token).ConfigureAwait(continueOnCapturedContext: false);
