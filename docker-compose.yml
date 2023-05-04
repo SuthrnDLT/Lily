@@ -1,9 +1,9 @@
 version: "3.9"
 services:
-  chatbot:
+  bot:
     build: ./src/Lily
-    secrets:
-      - userSecrets
-secrets:
-  userSecrets:
-    file: ./.secrets/secrets.json
+    ports:
+      - "80:80"
+    environment:
+      - DOTNET_USER_SECRETS_ID=0xlily
+      - discordToken=${discordToken}
