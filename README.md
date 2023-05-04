@@ -65,3 +65,9 @@ To run Lily in Docker, open the repo in VS Code, and execute the following comma
 ```bash
 docker compose up
 ```
+
+## 🛣️ Roadmap
+
+We don't really know where this is going yet. However, we do know a few items we'd like to see realized in the future:
+
+- [ ] Add support for integrating with Open AI.
