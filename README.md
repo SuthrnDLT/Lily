@@ -89,21 +89,3 @@ That's it, Lily is officially running in Docker!
 We don't really know where this is going yet. However, we do know a few items we'd like to see realized in the future:
 
 - [ ] Add support for integrating with Open AI.
-
-## 💡 Recommended Extensions
-
-The following extensions are recommended for working with this project:
-
-- C#
-- C# Extensions
-- C# XML Documentation Comments
-- IntelliCode
-- IntelliCode API Usage Examples
-- Editor Config
-- Markdown Lint
-- Spell Checker
-- Remote Containers
-- Copilot
-- GitLens
-
-Using VS Code, you can find these extensions quickly by searching the extensions tree view for `@recommended`.
