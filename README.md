@@ -1,9 +1,5 @@
 # Lily
 
-> ## Warning
->
-> This repository does not compile at the moment. Please bear with me as I rework the foundation to support secrets properly.
-
 Lily is a simple Discord bot that provides a few useful features for the community.
 
 ![License](https://img.shields.io/github/license/tacosontitan/Lily?logo=github&style=for-the-badge)
@@ -64,11 +60,24 @@ dotnet run
 
 ### 🐋 Running the bot in Docker
 
-To run Lily in Docker, open the repo in VS Code, and execute the following commands in a new terminal:
+To run Lily in Docker:
+
+- Open the repo in VS Code.
+- Create a `.env` file at the repo's root directory.
+  - There's a `.envsample` file there you can copy from.
+- Add your bot's Discord token to the `.env` file under the key `discordToken`:
+
+```env
+discordToken=YOUR_TOKEN_HERE
+```
+
+- Execute the following command in a new terminal:
 
 ```bash
 docker compose up
 ```
+
+That's it, Lily is officially running in Docker!
 
 ## 🛣️ Roadmap
 
