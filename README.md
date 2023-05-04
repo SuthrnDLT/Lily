@@ -1,5 +1,9 @@
 # Lily
 
+> ## Warning
+>
+> This repository does not compile at the moment. Please bear with me as I rework the foundation to support secrets properly.
+
 Lily is a simple Discord bot that provides a few useful features for the community.
 
 ![License](https://img.shields.io/github/license/tacosontitan/Lily?logo=github&style=for-the-badge)
