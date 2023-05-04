@@ -53,7 +53,7 @@ There are two ways this repository uses secrets.
 
 #### 👤 VS Code User Secrets
 
-- Install the dotnet user-secrets tool by running the following command in the root directory of your project:
+Install the dotnet user-secrets tool by running the following command in the root directory of your project:
 
 ```bash
 dotnet tool install --global dotnet-user-secrets
@@ -66,6 +66,8 @@ dotnet user-secrets set discordToken YOUR_TOKEN_HERE
 ```
 
 #### 🐋 Docker environment variables
+
+When running the bot in Docker, you need to pass your secrets as environment variables:
 
 - Create a `.env` file at the repo's root directory.
   - There's a `.envsample` file there you can copy from.
