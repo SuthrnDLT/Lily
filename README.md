@@ -19,7 +19,7 @@ Get started by reviewing the answers to the following questions:
 
 ### ✅ Small changes, continuously integrated
 
-Pasper employs workflows for continuous integration to ensure the repository is held to industry standards; here's the current state of those workflows:
+Lily employs workflows for continuous integration to ensure the repository is held to industry standards; here's the current state of those workflows:
 
 ![.NET Workflow](https://img.shields.io/github/actions/workflow/status/tacosontitan/Lily/dotnet.yml?label=Build%20and%20Test&logo=dotnet&style=for-the-badge)
 
