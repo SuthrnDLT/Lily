@@ -1,0 +1,32 @@
+name: 🎉 Request a new command
+description: If you've got an idea for a command, then request it here.
+labels: [command,under review]
+body:
+  - type: dropdown
+    id: version
+    attributes:
+      label: 🔢 Version
+      description: Which version are you currently using?
+      options:
+        - 🐣 Pre-Release
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: 🪪 What is the name of this command?
+      description: Please keep it concise.
+      placeholder: whoami
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 📃 What should the command do?
+      description: Please give a brief explanation.
+      placeholder: This command should identify the invoking user based on their Discord user profile and interactions with the server the command is invoked within.
+  - type: checkboxes
+    attributes:
+      label: 🔎 Have you searched for this command?
+      description: I have searched for this command by its recommended name and no duplicate requests exist.
+      options:
+        - label: 👍 Yes
+        - label: 👎 No
