@@ -47,6 +47,34 @@ The following extensions are recommended for working with this project:
 
 Using VS Code, you can find these extensions quickly by searching the extensions tree view for `@recommended`.
 
+### 🔑 Managing your secrets
+
+There are two ways this repository uses secrets.
+
+#### 👤 VS Code User Secrets
+
+- Install the dotnet user-secrets tool by running the following command in the root directory of your project:
+
+```bash
+dotnet tool install --global dotnet-user-secrets
+```
+
+Then set your bot's token:
+
+```bash
+dotnet user-secrets set discordToken YOUR_TOKEN_HERE
+```
+
+#### 🐋 Docker environment variables
+
+- Create a `.env` file at the repo's root directory.
+  - There's a `.envsample` file there you can copy from.
+- Add your bot's Discord token to the `.env` file under the key `discordToken`:
+
+```env
+discordToken=YOUR_TOKEN_HERE
+```
+
 ### ▶️ Running the bot
 
 To run Lily locally, open the repo in VS Code, and execute the following commands in a new terminal:
@@ -63,14 +91,7 @@ dotnet run
 To run Lily in Docker:
 
 - Open the repo in VS Code.
-- Create a `.env` file at the repo's root directory.
-  - There's a `.envsample` file there you can copy from.
-- Add your bot's Discord token to the `.env` file under the key `discordToken`:
-
-```env
-discordToken=YOUR_TOKEN_HERE
-```
-
+- Ensure your Discord token is established in a `.env` file as described above.
 - Execute the following command in a new terminal:
 
 ```bash
