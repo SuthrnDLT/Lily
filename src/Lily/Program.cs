@@ -3,6 +3,9 @@
 using Lily;
 
 IHost host = Host.CreateDefaultBuilder(args)
+    .ConfigureAppConfiguration((hostingContext, config) => {
+        config.AddUserSecrets("0xlily");
+    })
     .ConfigureServices(services =>
     {
         services.AddHostedService<Worker>()
