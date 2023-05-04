@@ -1,4 +1,3 @@
-using System.Diagnostics.CodeAnalysis;
 using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
@@ -27,10 +26,6 @@ internal sealed class Worker : BackgroundService
         _logger = logger;
     }
 
-    [SuppressMessage(
-        "Microsoft.Security",
-        "CA1848:AvoidUseOfRuntimeUnverifiableCode",
-        Justification = "High performance logging is not needed right now.")]
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         _logger.Log(LogLevel.Information, $"Starting Lily.");
