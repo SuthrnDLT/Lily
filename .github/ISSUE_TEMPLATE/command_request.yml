@@ -29,4 +29,3 @@ body:
       description: I have searched for this command by its recommended name and no duplicate requests exist.
       options:
         - label: 👍 Yes
-        - label: 👎 No
