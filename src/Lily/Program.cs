@@ -1,6 +1,7 @@
 #pragma warning disable CA1852 // Disable 1852 on the basis that sealing Program is not a concern for this project.
 
 using Lily;
+using Lily.Services;
 
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureAppConfiguration((hostingContext, config) => {
@@ -8,8 +9,10 @@ IHost host = Host.CreateDefaultBuilder(args)
     })
     .ConfigureServices(services =>
     {
-        services.AddHostedService<Worker>()
-                .AddDiscord();
+        services
+            .AddDiscord()
+            .AddHostedService<Worker>()
+            .AddHostedService<AnimationService>();
     })
     .Build();
 
