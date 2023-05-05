@@ -1,10 +1,10 @@
-using Lily.Core.Commands;
+// using Lily.Core.Commands;
 
-namespace Lily.Commands;
+// namespace Lily.Commands;
 
-public sealed class AninameCommand : Command
-{
-    public AninameCommand(ILogger logger) : base(logger)
-    {
-    }
-}
+// public sealed class AninameCommand : Command
+// {
+//     public AninameCommand(ILogger logger) : base(logger)
+//     {
+//     }
+// }
