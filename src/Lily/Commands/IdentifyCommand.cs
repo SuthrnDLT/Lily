@@ -8,7 +8,7 @@ internal sealed class IdentifyCommand : Command
         base(logger)
     { }
 
-    [Command("identify")]
+    [Command("identify", "Prompts Lily to identify herself.")]
     public async Task Identify()
     {
         Logger.LogInformation("Received invocation for the identify command.");
