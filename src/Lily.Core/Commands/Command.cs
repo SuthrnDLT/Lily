@@ -12,8 +12,14 @@ public abstract class Command : ModuleBase<SocketCommandContext>
     /// Creates a new <see cref="Command"/> instance.
     /// </summary>
     /// <param name="logger">The logger the command should use.</param>
-    public Command(ILogger logger) =>
+    /// <exception cref="ArgumentNullException">Thrown if <paramref name="logger"/> is <see langword="null"/>.</exception>
+    public Command(ILogger logger)
+    {
+        if (logger is null)
+            throw new ArgumentNullException(nameof(logger));
+
         Logger = logger;
+    }
 
     /// <summary>
     /// Gets the <see cref="ILogger"/> utilized by this command instance.
