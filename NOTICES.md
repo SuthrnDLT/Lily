@@ -21,7 +21,7 @@ The following dependencies are utilized by this project:
 
 ### Discord.Net
 
-Discord.Net is licensed under the [MIT License](#mit-license):
+Discord.Net is licensed under the MIT License:
 
 > The MIT License (MIT)
 >
