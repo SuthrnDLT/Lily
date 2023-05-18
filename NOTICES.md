@@ -13,6 +13,11 @@ This project includes many third-party dependencies, each of which with their ow
 The following dependencies are utilized by this project:
 
 - [Discord.Net](#discordnet)
+- [NSubstitute](#nsubstitute)
+- [XUnit](#xunit)
+  - [ConsoleHelper](#consolehelper)
+- [coverlet](#coverlet)
+  - [ConsoleTables](#consoletables)
 
 ### Discord.Net
 
