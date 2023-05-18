@@ -3,7 +3,7 @@
 This project includes many third-party dependencies, each of which with their own licenses. This document is intended to provide a summary of the dependencies utilized and their licenses.
 
 > **Note**  
-> In the event that we have missed a dependency or a license, please [open an issue](https://github.com/tacosontitan/Lily/issues/new?assignees=&labels=needs+categorization%2Cunder+review&projects=&template=other_request.yml) so that we can correct it.
+> In the event that a license is inaccurate, or we have missed a dependency or a license, please [open an issue](https://github.com/tacosontitan/Lily/issues/new?assignees=&labels=needs+categorization%2Cunder+review&projects=&template=other_request.yml) so that we can correct it.
 >
 > **Warning**  
 > This document is not intended to be a replacement for the licenses themselves, and the licenses themselves should be consulted for the full up-to-date terms and conditions. In the event of a conflict between this document and the licenses themselves, the original licenses shall be considered the source of truth.
