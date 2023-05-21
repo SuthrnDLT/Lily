@@ -27,7 +27,7 @@ IHost host = Host.CreateDefaultBuilder(args)
     {
         services
             .AddDiscord()
-            .AddHostedService<Worker>()
+            .AddHostedService<LilyService>()
             .AddHostedService<AnimationService>();
     })
     .Build();
