@@ -21,6 +21,9 @@ namespace Microsoft.Extensions.DependencyInjection;
 
 internal static class DependencyInjectionExtensions
 {
+    internal static IServiceCollection AddGeneralDependencies(this IServiceCollection services) =>
+        services.AddSingleton<Random>();
+    
     internal static IServiceCollection AddDiscord(this IServiceCollection services)
     {
         var commandServiceConfiguration = new CommandServiceConfig {

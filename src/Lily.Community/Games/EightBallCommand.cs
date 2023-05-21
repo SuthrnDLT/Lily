@@ -6,9 +6,16 @@ namespace Lily.Community.Games;
 
 public sealed class EightBallCommand : Command
 {
-    public EightBallCommand(ILogger<EightBallCommand> logger) :
+    private readonly Random _random;
+
+    public EightBallCommand(Random random, ILogger<EightBallCommand> logger) :
         base(logger)
-    { }
+    {
+        if (random is null)
+            throw new ArgumentNullException(nameof(random));
+
+        _random = random;
+    }
 
     [Command("8ball", "Ask the magic 8-ball a question.")]
     public async Task Identify()
